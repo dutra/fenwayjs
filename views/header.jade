@@ -1,0 +1,36 @@
+
+mixin navli(item, path)
+    if view == item
+      li.nav-active
+        a(href=path)
+          block
+    else
+      li
+        a(href=path)
+          block
+      
+.nav.navbar-default(role="navigation")
+  .container
+      
+    a.navbar-brand(href="/")
+      span.text-red 34
+      | FENWAY
+
+    .navbar-header
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        spain.icon-bar
+
+    
+    .collapse.navbar-collapse.navbar-right
+      ul.nav.navbar-nav
+        +navli('index', '/') Home
+        +navli('about', '/about') About
+        +navli('members', '/members') Members
+        +navli('events', '/events') Events
+        +navli('photos', '/photos') Photos
+        +navli('contact', '/contact') Contact
+      
+      

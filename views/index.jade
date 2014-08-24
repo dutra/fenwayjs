@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .container
+    .row
+      .col-xs-7
+      .col-xs-5
+        .index-title
+           | Hello there. We are 
+           span.text-red Fenway House
+           | .
+       p Welcome to #{title}

@@ -1,0 +1,60 @@
+/* TYPOGRAPHY
+   ******************************************/
+
+body {
+    font-family: "Varela Round";    
+}
+
+.index-title {
+    font-size: 38.5px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+
+/* NAVBAR
+   ******************************************/
+.navbar-default {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navbar-default .navbar-brand {
+    color: #383838;
+    font-family: "Holtwood One SC";
+    font-size: 60px;
+
+}
+.navbar-default .navbar-brand:hover {
+
+
+}
+
+.text-red {
+    color: #d44942;
+
+}
+.navbar-default ul.nav {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #383838;
+}
+
+.navbar-default .nav li {
+    background-color: #383838;
+}
+.navbar-default .nav .nav-active {
+    background-color: #E3170D;
+}
+.navbar-default .nav li a {
+    padding: 10px 22px 10px 22px;
+    color: #fff;
+    font-size: 16px;
+}
+.navbar-default .nav li a:hover {
+    color: #fff;
+    font-size: 16px;
+}

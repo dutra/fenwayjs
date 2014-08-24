@@ -11,7 +11,7 @@ module.exports = {
             host: "db.dutra.io",
             port: 28015,
             authKey: "",
-            db: "dutrajs"
+            db: "fenwayjs"
         }
     },
     express: {

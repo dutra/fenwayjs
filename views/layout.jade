@@ -1,7 +1,30 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    title= 'fenway | '+ title
+    
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
+
+    each vendor_stylesheet in  ['bootstrap', 'bootstrap-theme']
+      link(rel='stylesheet', type='text/css', media='all' href='/stylesheets/lib/'+ vendor_stylesheet + '.css')
+    link(rel='stylesheet', type='text/css', media='all' href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+      
+    link(rel='stylesheet', type='text/css', media='all' href='http://fonts.googleapis.com/css?family=Varela+Round|Paprika|Holtwood+One+SC')
+
+    each size in ['all']
+      link(rel='stylesheet', type='text/css', media='all' href='/stylesheets/'+size+'.css')
+
+    block stylesheets
+          
+    body
+        
+      include header
+      
+      block content
+
+//      include footer
+        
+    each vendor_script in ['jquery-2.1.1', 'bootstrap']
+      script(type='text/javascript', src='/javascripts/lib/'+vendor_script+'.js')
+
+    block scripts
